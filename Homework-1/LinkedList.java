@@ -1,9 +1,9 @@
-//18253069 GÜNSELİ ÇOLAK
+//18253069 GÃœNSELÄ° Ã‡OLAK
 public class Odev1LinkedList<T extends Comparable<T>> extends AbstractLinkedList<T> {
     /**
-     * Bir listede elemanları uygun konuma ekler. Boş bir listeye elemanlar eklendikten
-     * sonra küçükten büyüğe sıralı olur
-     * @param value eklenecek değer
+     * Bir listede elemanlarÃ½ uygun konuma ekler. BoÃ¾ bir listeye elemanlar eklendikten
+     * sonra kÃ¼Ã§Ã¼kten bÃ¼yÃ¼Ã°e sÃ½ralÃ½ olur
+     * @param value eklenecek deÃ°er
      */
     @Override
     public void insertInOrder(T value) {
@@ -22,9 +22,9 @@ public class Odev1LinkedList<T extends Comparable<T>> extends AbstractLinkedList
             current = current.next; 
         }
         
-        //Liste olusturmadan direkt sadece küçuk olup olmadığına bakılıp yapılabilir.
-        //Aşağidaki kod çok gereksiz işlemleri kapsıyor
-        //node u null aldığı için boş döndürüyor
+        //Liste olusturmadan direkt sadece kÃ¼Ã§uk olup olmadÃ½Ã°Ã½na bakÃ½lÃ½p yapÃ½labilir.
+        //AÃ¾aÃ°idaki kod Ã§ok gereksiz iÃ¾lemleri kapsÃ½yor
+        //node u null aldÃ½Ã°Ã½ iÃ§in boÃ¾ dÃ¶ndÃ¼rÃ¼yor
         
        /*Odev1LinkedList<T> list2 = new Odev1LinkedList<>();
        Node<T> current = getHead();
@@ -56,8 +56,8 @@ public class Odev1LinkedList<T extends Comparable<T>> extends AbstractLinkedList
     }
 
     /**
-     * Mevcut listeyi değiştirmeden, elemanların sırası ters çevrilmiş halde geri döndürür.
-     * @return Ters çevrilmiş liste
+     * Mevcut listeyi deÃ°iÃ¾tirmeden, elemanlarÃ½n sÃ½rasÃ½ ters Ã§evrilmiÃ¾ halde geri dÃ¶ndÃ¼rÃ¼r.
+     * @return Ters Ã§evrilmiÃ¾ liste
      */
     @Override
     public AbstractLinkedList<T> reverse() {
@@ -74,10 +74,10 @@ public class Odev1LinkedList<T extends Comparable<T>> extends AbstractLinkedList
     }
 
     /**
-     * Mevcut liste ile parametre olarak gelen listeyi birleştirip geriye döndürür.
-     * Mevcut listede değişiklik yapılmaz.
+     * Mevcut liste ile parametre olarak gelen listeyi birleÃ¾tirip geriye dÃ¶ndÃ¼rÃ¼r.
+     * Mevcut listede deÃ°iÃ¾iklik yapÃ½lmaz.
      * @param list Mevcut listenin sonuna eklenecek liste
-     * @return Birleşmiş liste
+     * @return BirleÃ¾miÃ¾ liste
      */
     @Override
     public AbstractLinkedList<T> concatenate(AbstractLinkedList<T> list) {
